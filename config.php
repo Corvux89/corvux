@@ -13,6 +13,7 @@ function config($key = '')
             'about-us' => 'About Us',
             'products' => 'Products',
             'contact' => 'Contact',
+            'test' => 'wtf',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
