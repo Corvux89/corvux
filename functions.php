@@ -52,6 +52,15 @@ function pageContent()
         include config('content_path').'/404.php';
     }
 }
+
+function pageImage($page)
+{
+    $path = getcwd().'/'.config('image_path').'/'.$page.'.jpg';
+    
+    header('content-type: image/jpeg');
+    readfile($path);
+    exit;
+}
 /**
  * Starts everything and displays the template.
  */

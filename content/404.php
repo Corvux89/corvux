@@ -1,1 +1,1 @@
-<P><b>oops...</b></P>
+<?php //pageImage('404_page_cover') ?>
