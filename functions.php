@@ -55,11 +55,10 @@ function pageContent()
 
 function pageImage($page)
 {
-    $path = getcwd().'/'.config('image_path').'/'.$page;
-    $result = $_GET['$path'];
+    $path = config('image_path').'/'.$page;
     
-   echo '<img src="'. $path .'" />';
-   echo 'yup';
+   $testEcho = '<img src="'. $path.'">';
+   echo $testEcho;
     
 }
 /**
