@@ -12,7 +12,7 @@ function config($key = '')
         
         //Navigation Menu
         'nav_menu' => [
-            '' => 'Home',
+            'nope' => 'Home',
             'error' => 'error',
             'test' => 'wtf',
         ],

@@ -55,11 +55,12 @@ function pageContent()
 
 function pageImage($page)
 {
-    $path = getcwd().'/'.config('image_path').'/'.$page.'.jpg';
+    $path = getcwd().'/'.config('image_path').'/'.$page;
+    $result = $_GET['$path'];
     
-    header('content-type: image/jpeg');
-    readfile($path);
-    exit;
+   echo '<img src="'. $path .'" />';
+   echo 'yup';
+    
 }
 /**
  * Starts everything and displays the template.
