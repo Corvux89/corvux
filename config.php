@@ -21,6 +21,7 @@ function config($key = '')
         'template_path' => 'template',
         'content_path' => 'content',
         'image_path' => 'images',
+        'application_path' => 'application',
         
         //Pretty!!!!
         'pretty_uri' => true,
