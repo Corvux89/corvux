@@ -3,8 +3,9 @@
     // Press the 'Run' button on the top to start the web server,
     // then click the URL that is emitted to the Output tab of the console.
 
-    $servername = getenv('IP');
-    $username = getenv('C9_USER');
+    //$servername = getenv('IP');
+    $servername = dbInfo('servername');
+    $username = dbInfo('username');
     $password = "";
     $database = "test_db";
     $dbport = 3306;

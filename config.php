@@ -26,6 +26,13 @@ function config($key = '')
         //Pretty!!!!
         'pretty_uri' => true,
         
+        //DB Information
+        'db_host' => 'localhost',
+        'db_username' => getenv('C9_USER'),
+        'db_password' => "",
+        'db_database' => "test_db",
+        'db_port' => '3306',
+        
         //Version
         'version' => 'v1.0',
         

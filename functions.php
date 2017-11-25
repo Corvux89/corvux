@@ -44,7 +44,8 @@ function pageContent()
     
     $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     
-    $path = getcwd().'/'.config('content_path').'/'.$page.'.php';
+    //$path = getcwd().'/'.config('content_path').'/'.$page.'.php';
+    $path = config('content_path').'/'.$page.'.php';
     
     if (file_exists(filter_var($path, FILTER_SANITIZE_URL))) {
         include $path;
@@ -67,4 +68,11 @@ function pageImage($page)
 function run()
 {
     include config('template_path').'/template.php';
+}
+
+function dbInfo($property)
+{
+    $prop_string='db_'.$property;
+    
+    include config($prop_string);
 }
