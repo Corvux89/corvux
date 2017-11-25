@@ -10,10 +10,10 @@ function config($key = '')
         //Website Name
         'name' => "Corvux's Website",
         
-        //Navigation Menu
+        //Navigation Menu and Content
         'nav_menu' => [
             '' => 'Home',
-            'error' => 'error',
+            '404' => 'error',
             'test' => 'wtf',
             'nope' => 'nope',
         ],

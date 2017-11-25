@@ -1,7 +1,5 @@
 Options +FollowSymLinks
 RewriteEngine On
-Rewritebase /
-AllowOverride All
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
