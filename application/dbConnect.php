@@ -4,11 +4,11 @@
     // then click the URL that is emitted to the Output tab of the console.
 
     //$servername = getenv('IP');
-    $servername = dbInfo('servername');
+    $servername = dbInfo('server');
     $username = dbInfo('username');
-    $password = "";
-    $database = "test_db";
-    $dbport = 3306;
+    $password = dbInfo('password');
+    $database = dbInfo('database');
+    $dbport = dbInfo('port');
 
     // Create connection
     $db = new mysqli($servername, $username, $password, $database, $dbport);

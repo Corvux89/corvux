@@ -1,10 +1,10 @@
 <?php
 
-$host="localhost"; 
-$username=getenv('C9_USER'); 
-$password=""; 
-$db_name="test_db"; // Database name 
-$tbl_name="web_members"; // Table name 
+$host=config('db_host');
+$username=config('db_username');
+$password=config('db_password');
+$db_name=config('db_database');
+$tbl_name=config('db_user_table');
 
 // Connect to server and select databse.
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 

@@ -13,9 +13,7 @@ function config($key = '')
         //Navigation Menu and Content
         'nav_menu' => [
             '' => 'Home',
-            '404' => 'error',
-            'test' => 'wtf',
-            'nope' => 'nope',
+            'mainLogin' => "Login Testing",
         ],
         
         // Paths
@@ -29,10 +27,12 @@ function config($key = '')
         
         //DB Information
         'db_host' => 'localhost',
+        'db_server' => getenv('IP'),
         'db_username' => getenv('C9_USER'),
         'db_password' => "",
         'db_database' => "test_db",
         'db_port' => '3306',
+        'db_user_table' => 'web_members',
         
         //Version
         'version' => 'v1.0',
